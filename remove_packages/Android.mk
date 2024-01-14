@@ -6,7 +6,6 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
 		RecorderPrebuilt \
-		Photos \
 		Drive \
 		Maps \
 		YouTube \
@@ -19,13 +18,11 @@ LOCAL_OVERRIDES_PACKAGES := \
 		CarrierMetrics \
 		DevicePolicyPrebuilt \
 		DiagnosticsToolPrebuilt \
-		SafetyHubPrebuilt \
 		ScribePrebuilt \
 		Showcase \
 		Tycho \
 		Papers \
 		Videos \
-		PixelLiveWallpaperPrebuilt \
 		talkback \
 		Updates \
 		FM2 \
