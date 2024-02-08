@@ -27,11 +27,15 @@ LOCAL_OVERRIDES_PACKAGES := \
 		Videos \
 		PixelLiveWallpaperPrebuilt \
 		talkback \
-		Updates \
+		Updater \
 		FM2 \
 		NfcNci \
 		ViMusic \
 		AndroidAutoStubPrebuilt \
+		arcore \
+		Gallery2 \
+		Gramophone \
+		DerpWalls \
 		Papers
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
