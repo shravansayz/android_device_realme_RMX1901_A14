@@ -27,7 +27,7 @@ LOCAL_OVERRIDES_PACKAGES := \
 		Videos \
 		PixelLiveWallpaperPrebuilt \
 		talkback \
-		Updates \
+		Updater \
 		FM2 \
 		NfcNci \
 		ViMusic \
