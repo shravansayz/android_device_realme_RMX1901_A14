@@ -56,6 +56,7 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libvolumelistener \
+    libaudioparsers \
     libcirrusspkrprot \
     libspkrprot \
     libhdmiedid \
@@ -64,6 +65,7 @@ PRODUCT_PACKAGES += \
     libhfp \
     libbatterylistener \
     libsndmonitor \
+    libhdmipassthru \
     tinymix
 
 PRODUCT_COPY_FILES += \
