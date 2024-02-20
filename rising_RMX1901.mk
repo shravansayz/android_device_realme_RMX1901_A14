@@ -8,6 +8,7 @@
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_HAS_UDFPS := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/rising/config/rising.mk)
 
 # RisingOS flags
@@ -20,8 +21,7 @@ RISING_BATTERY := 3765mAh
 # Inherit from RMX1901 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Viper
-$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1901
