@@ -9,4 +9,4 @@ PRODUCT_MAKEFILES := \
 
 COMMON_LUNCH_CHOICES := \
     rising_RMX1901-userdebug \
-	rising_RMX1901-eng
+    rising_RMX1901-eng
