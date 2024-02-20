@@ -9,6 +9,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_HAS_UDFPS := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_DISABLE_EPPE := true
+RISING_BUILDTYPE := UNOFFICIAL
 $(call inherit-product, vendor/rising/config/rising.mk)
 
 # RisingOS flags
