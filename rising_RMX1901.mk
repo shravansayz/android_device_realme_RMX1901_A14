@@ -15,7 +15,7 @@ $(call inherit-product, vendor/rising/config/rising.mk)
 WITH_GMS := true
 TARGET_CORE_GMS := true
 RISING_MAINTAINER := Shravan
-ISING_CHIPSET := SDM710
+RISING_CHIPSET := SDM710
 RISING_BATTERY := 3765mAh
 
 # Inherit from RMX1901 device
