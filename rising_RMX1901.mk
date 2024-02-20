@@ -13,7 +13,7 @@ $(call inherit-product, vendor/rising/config/rising.mk)
 # RisingOS flags
 WITH_GMS := true
 TARGET_CORE_GMS := true
-RISING_MAINTAINER := м∂_ιѕяαƒιℓ
+RISING_MAINTAINER := Shravan
 ISING_CHIPSET := SDM710
 RISING_BATTERY := 3765mAh
 
