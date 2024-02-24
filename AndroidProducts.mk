@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/droidx_RMX1901.mk
+    $(LOCAL_DIR)/cipher_RMX1901.mk
 
 COMMON_LUNCH_CHOICES := \
-    droidx_RMX1901-userdebug \
-    droidx_RMX1901-eng
+    cipher_RMX1901-userdebug \
+    cipher_RMX1901-eng
