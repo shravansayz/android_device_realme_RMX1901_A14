@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cipher_RMX1901.mk
+    $(LOCAL_DIR)/afterlife_RMX1901.mk
 
 COMMON_LUNCH_CHOICES := \
-    cipher_RMX1901-userdebug \
-    cipher_RMX1901-eng
+    afterlife_RMX1901-userdebug \
+    afterlife_RMX1901-eng
