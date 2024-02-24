@@ -1,3 +1,3 @@
-echo 'Cloning Proton Clang [1/1]'
-# Proton Clang
-git clone --depth=1 https://github.com/kdrag0n/proton-clang prebuilts/clang/host/linux-x86/clang-proton
+echo 'Sub module [1/1]'
+
+cd kernel/realme/sdm710 && git submodule sync && git submodule update --init --recursive && cd KernelSU && git checkout main && git pull && touch Android.mk && cd ../../../..
