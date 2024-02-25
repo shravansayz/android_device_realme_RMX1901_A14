@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/afterlife_RMX1901.mk
+    $(LOCAL_DIR)/rising_RMX1901.mk
 
 COMMON_LUNCH_CHOICES := \
-    afterlife_RMX1901-userdebug \
-    afterlife_RMX1901-eng
+    rising_RMX1901-userdebug \
+    rising_RMX1901-eng
