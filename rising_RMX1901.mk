@@ -8,31 +8,31 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-$(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
-# Inherit some common DroidX stuff
+# Inherit some common Rising OS stuff
 TARGET_BOOT_ANIMATION_RES := 1080
-EXTRA_UDFPS_ANIMATIONS := true
+TARGET_HAS_UDFPS := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-USE_PIXEL_CHARGING := true
-TARGET_SUPPORTS_TOUCHGESTURES := true
-TARGET_SUPPORTS_BLUR := true
-TARGET_BUILD_APERTURE_CAMERA := true
+TARGET_DISABLE_EPPE := true
+RISING_BUILDTYPE := UNOFFICIAL
 
- # Maintainer Flag
- AFTERLIFE_MAINTAINER := SHRAVAN
- 
- # CoreGapps
-AFTERLIFE_GAPPS := true
-AFTERLIFE_CORE := true
-AFTERLIFE_EXTRA := true
+$(call inherit-product, vendor/rising/config/rising.mk)
+
+# RisingOS flags
+WITH_GMS := true
+TARGET_CORE_GMS := true
+RISING_MAINTAINER := Shravan
+RISING_CHIPSET := SDM710
+RISING_BATTERY := 3765mAh
 
 # Inherit from RMX1901 device
-$(call inherit-product, $(LOCAL_PATH)/device.mk)
+$(call inherit-product, device/realme/RMX1901/device.mk)
+
+
 
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1901
 PRODUCT_MANUFACTURER := realme
-PRODUCT_NAME := afterlife_RMX1901
+PRODUCT_NAME := rising_RMX1901
 PRODUCT_MODEL := RMX1901
 
 PRODUCT_SYSTEM_NAME := RMX1901
