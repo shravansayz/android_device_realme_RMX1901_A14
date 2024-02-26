@@ -27,7 +27,7 @@ RISING_CHIPSET := SDM710
 RISING_BATTERY := 3765mAh
 
 # Inherit from RMX1901 device
-$(call inherit-product, $(LOCAL_PATH)/device.mk
+$(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 
 PRODUCT_BRAND := realme
