@@ -12,10 +12,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_HAS_UDFPS := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_DISABLE_EPPE := true
-RISING_BUILDTYPE := UNOFFICIAL
+DROIDX_BUILD_TYPE := UNOFFICIAL
+DROIDX_GAPPS := true
+TARGET_ENABLE_BLUR := true
+EXTRA_UDFPS_ANIMATIONS := true
 
-$(call inherit-product, vendor/rising/config/rising.mk)
+$(call inherit-product, vendor/droidx/config/common_full_phone.mk)
 
 # RisingOS flags
 WITH_GMS := true
@@ -25,14 +27,13 @@ RISING_CHIPSET := SDM710
 RISING_BATTERY := 3765mAh
 
 # Inherit from RMX1901 device
-$(call inherit-product, device/realme/RMX1901/device.mk)
-
+$(call inherit-product, $(LOCAL_PATH)/device.mk
 
 
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1901
 PRODUCT_MANUFACTURER := realme
-PRODUCT_NAME := rising_RMX1901
+PRODUCT_NAME := droidx_RMX1901
 PRODUCT_MODEL := RMX1901
 
 PRODUCT_SYSTEM_NAME := RMX1901
