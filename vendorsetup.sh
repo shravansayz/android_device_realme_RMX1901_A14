@@ -1,5 +1,5 @@
 echo 'Cloning Kernel tree [1/3]'
-https://github.com/shravansayz/android_kernel_realme_sdm710.git -b 14 realme/sdm710
+https://github.com/shravansayz/android_kernel_realme_sdm710.git -b 14 kernel/realme/sdm710
 
 echo 'Cloning Vendor tree [2/3]'
 https://github.com/shravansayz/android_vendor_RMX1901_A14.git -b 14 realme/RMX1901
