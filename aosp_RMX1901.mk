@@ -16,6 +16,7 @@ HORIZON_MAINTAINER := SHRAVAN
 HORIZON_BUILD_TYPE := UNOFFICIAL
 TARGET_ENABLE_BLUR := true
 EXTRA_UDFPS_ANIMATIONS := true
+TARGET_DISABLE_EPPE := true
 
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
