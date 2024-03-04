@@ -1,2 +1,2 @@
-echo 'cloning Clang-proton [1/1]'
-git clone --depth=1 https://github.com/kdrag0n/proton-clang.git  prebuilts/clang/host/linux-x86/clang-proton
+echo "Syncing KernelSU to latest source [1/1]"
+cd kernel/realme/RMX1901 && git submodule sync && git submodule update --init --recursive && cd KernelSU && git checkout main && git pull && touch Android.mk && cd ../../../..
