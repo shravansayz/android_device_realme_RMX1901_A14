@@ -1,2 +1,13 @@
-echo "Syncing KernelSU to latest source [1/1]"
+echo "Syncing KernelSU to latest source [1/2]"
 cd kernel/realme/sdm710 && git submodule sync && git submodule update --init --recursive && cd KernelSU && git checkout main && git pull && touch Android.mk && cd ../../../..
+
+echo "clang" [2/2]"
+CLANGDIR=$PWD/prebuilts/clang/host/linux-x86
+CLANGVER=proton
+if [ ! -d "${CLANGDIR}/${CLANGVER}" ]
+then
+    GREEN='\033[0;32m'
+    NC='\033[0m'
+    echo -e "${GREEN}Downloading proton${NC}"
+    git clone --depth=1 https://github.com/kdrag0n/proton-clang.git  prebuilts/clang/host/linux-x86/clang-proton -b ${CLANGVER} "${CLANGDIR}/${CLANGVER}" --single-branch
+fi
