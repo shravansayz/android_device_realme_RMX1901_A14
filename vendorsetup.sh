@@ -1,7 +1,4 @@
-echo "Syncing KernelSU to latest source [1/2]"
-cd kernel/realme/sdm710 && git submodule sync && git submodule update --init --recursive && cd KernelSU && git checkout main && git pull && touch Android.mk && cd ../../../..
-
-echo "clang" [2/2]"
+echo "clang" [1/1]"
 CLANGDIR=$PWD/prebuilts/clang/host/linux-x86
 CLANGVER=proton
 if [ ! -d "${CLANGDIR}/${CLANGVER}" ]
