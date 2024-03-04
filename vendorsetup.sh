@@ -1,4 +1,3 @@
-echo "clang" [1/1]"
 CLANGDIR=$PWD/prebuilts/clang/host/linux-x86
 CLANGVER=proton
 if [ ! -d "${CLANGDIR}/${CLANGVER}" ]
